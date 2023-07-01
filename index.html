@@ -26,6 +26,7 @@
 <body>
   <div class="textbox">
     <input type="text" id="inviteCodeInput" placeholder="Enter invite code to join" />
+    <button onclick="checkInviteCode()">Check Invite Code</button>
   </div>
 
   <a href="bruhhhhski.txt" class="download-link" download>Download invite details (.txt)</a>
@@ -41,7 +42,7 @@
       var hash = CryptoJS.SHA512("Congrats, Easy rii?").toString();
       
       if (inviteCode === hash) {
-        var message = "Congrats, Welcome ..."; // Customize the welcome message here
+        var message = "Welcome to the gang! ☺️"; // Customize the welcome message here
         alert(message);
       } else {
         alert("Invalid invite code. Please try again.");
