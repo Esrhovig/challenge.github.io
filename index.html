@@ -25,11 +25,28 @@
 </head>
 <body>
   <div class="textbox">
-    <input type="text" placeholder="Enter invite code to join" />
+    <input type="text" id="inviteCodeInput" placeholder="Enter invite code to join" />
   </div>
 
   <a href="bruhhhhski.txt" class="download-link" download>Download invite details (.txt)</a>
 
   <script src="prhub.js"></script>
+  <script>
+    // Obfuscated JavaScript code
+    var obfuscatedCode = "(function(){var rows=3,cols=5,hash='37369575f4f42b89c42ccab8f75f12b5faabd9a0b11842f38d3f0b0f54a9d37a6411ad559b85a7c5121ef7ff7ef7f68e5b6e72c439573bf46d25b161e1cc17a5';console.log('Rows:',rows);console.log('Columns:',cols);console.log('Hash:',hash);})();";
+
+    // Function to check the invite code
+    function checkInviteCode() {
+      var inviteCode = document.getElementById("inviteCodeInput").value;
+      var hash = CryptoJS.SHA512("Congrats, Easy rii?").toString();
+      
+      if (inviteCode === hash) {
+        var message = "Congrats, Welcome ..."; // Customize the welcome message here
+        alert(message);
+      } else {
+        alert("Invalid invite code. Please try again.");
+      }
+    }
+  </script>
 </body>
 </html>
